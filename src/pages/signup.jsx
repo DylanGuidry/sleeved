@@ -1,11 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom'; 
+import Picka from '../images/1337497_game_go_play_pikachu_pokemon_icon.png';
 
 function SignUp() {
     return (
         <div className="vh-100 d-flex justify-content-center align-items-center" style={{ backgroundColor: '#f0f2f5' }}>
             <div className="col-md-4">
+            <img src={Picka} className="" alt="Pikachu" style={{ height: '100px', margin: '20px' }}/> 
                 <div className="card shadow-lg" style={{ borderColor: '#dc3545' }}>
                     <div className="card-header text-center" style={{ backgroundColor: '#dc3545', color: 'white' }}>
                         <h4>Sign Up</h4>
