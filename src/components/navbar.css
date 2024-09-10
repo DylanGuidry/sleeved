@@ -1,3 +1,11 @@
 .custom-gradient {
     background: linear-gradient(to right, #d32f2f, #ef5350);
   }
+
+  .custom-nav-link {
+    font-weight: bold;
+    color: white !important; /* Use !important to override any existing color styles */
+    display: flex;
+    align-items: center;
+    height: 50px; /* Ensuring alignment with the search bar height */
+  }

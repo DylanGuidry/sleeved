@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from '../components/footer';
 import Navbar from '../components/navbar';
 import { Card, Button, Form, FormControl } from 'react-bootstrap';
-import Pichu from '../images/stellar.jpg'
+import Pichu from '../images/dZXgpxgwg3MgcqzgLeS5JZ-1200-80.jpg.webp'
 
 function HomePage() {
     const [isLoading, setIsLoading] = useState(true);
@@ -53,23 +53,13 @@ function HomePage() {
     return (
         <div>
             <Navbar bg="danger" variant="dark" expand="lg">
-                {/* Navbar content here */}
             </Navbar>
-            <div className="d-flex justify-content-center align-items-center my-4">
-                <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Search..."
-                    style={{ maxWidth: '200px', marginRight: '10px' }}
-                />
-                <button className="btn btn-danger" type="button">Search</button>
-            </div>
             <div className="d-flex justify-content-center my-4">
                 <div className="custom-header rounded-lg shadow" style={{ maxWidth: '90%', overflow: 'hidden', borderRadius: '20px' }}>
                     <header className="bg-dark py-5" style={{ backgroundImage: `url(${Pichu})`, backgroundSize: 'cover', backgroundPosition: 'center', borderRadius: '20px' }}>
                         <div className="container text-light">
-                        <h1 className="display-4 font-weight-bold" style={{ WebkitTextStroke: '2px black', fontSize: '60px', fontWeight: '900' }}>Welcome to Sleev'd</h1>
-                        <p className="lead" style={{ WebkitTextStroke: '1px black', fontSize: '24px', fontWeight: '700' }}>Your ultimate destination for trading and collecting Pokémon cards. Dive into a world where every card tells a story.</p>
+                            <h1 className="display-4 font-weight-bold" style={{ WebkitTextStroke: '2px black', fontSize: '70px', fontWeight: '1000' }}>Welcome to Sleev'd</h1>
+                            <p className="lead" style={{ WebkitTextStroke: '1px black', fontSize: '30px', fontWeight: '1000' }}>Your ultimate destination for trading and collecting Pokémon cards. Dive into a world where every card tells a story.</p>
                         </div>
                     </header>
                 </div>
@@ -84,11 +74,16 @@ function HomePage() {
                         shuffleArray([...cards]).slice(0, 3).map((card, index) => (
                             <div key={index} className="col-md-4 col-sm-6 mb-4">
                                 <div className="card h-100">
-                                    <img src={card.images.large || "https://via.placeholder.com/150"} className="card-img-top p-2" alt={card.name} />
-                                    <div className="card-body">
-                                        <h5 className="card-title">{card.name}</h5>
-                                        <p className="card-text">{card.description}</p>
-                                        <a href="#" className="btn btn-primary">Learn More</a>
+                                    <div className="row g-0">
+                                        <div className="col-md-8">
+                                            <div className="card-body">
+                                                <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
+                                                <a href="#" className="btn btn-danger">See Review</a>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-4">
+                                            <img src={card.images.large || "https://via.placeholder.com/150"} className="img-fluid rounded-start p-2" alt="Placeholder" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
